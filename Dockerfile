@@ -17,6 +17,6 @@ RUN npm run build
 FROM nginx:1.13.12-alpine
 # the following line has been commented as it appears it already exists
 # RUN mkdir /usr/share/nginx/html
-COPY --from=build /usr/src/app/build /usr/share/nginx/html/dashboard
+COPY --from=build /usr/src/app/build /usr/share/nginx/html/material-dashboard-react
 EXPOSE 80
 CMD [ "nginx", "-g", "daemon off;" ]
