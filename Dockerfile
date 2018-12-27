@@ -15,7 +15,8 @@ COPY . .
 RUN npm run build
 
 FROM nginx:1.13.12-alpine
-RUN mkdir /usr/share/nginx/html
-COPY --from=build /usr/src/app/build /usr/share/nginx/html/material-dashboard-react
+# the following line has been commented as it appears it already exists
+# RUN mkdir /usr/share/nginx/html
+COPY --from=build /usr/src/app/build /usr/share/nginx/html/dashbaord
 EXPOSE 80
 CMD [ "nginx", "-g", "daemon off;" ]
