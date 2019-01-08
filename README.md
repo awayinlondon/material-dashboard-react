@@ -1,3 +1,28 @@
+//git clone 
+
+// fork the source
+1. Navigate to https://github.com/creativetimofficial/material-dashboard-react.git
+2. Click on the [Fork] button.
+3. In local directory (the one to keep and work on)
+4. git clone https://github.com/awayinlondon/material-dashboard-react.git
+5. pushd ./material-dashboard-react
+
+// create a branch (from master) for managing deployments
+git checkout -b deploy
+git push --set-upstream origin deploy
+create package-log.json
+create Docker files (Dockerfile, .dockerignore)
+
+// create a branch for 'stripping' the source dashboard
+> git checkout -b stripped
+> git push --set-upstream origin stripped
+
+// create a branch for 'customising' the 'stripped' dashboard
+> git checkout stripped
+> git checkout -b <custom>
+
+
+
 # [Material Dashboard React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fmaterial-dashboard-react&text=Material%20Dashboard%20React%20-%20Free%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fmaterial-dashboard-react%2F%3F_ga%3D2.10428917.198078103.1532329372-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
 
 
